@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Uma jornada épica pela história da Inteligência Artificial.">
+    <title>Sinfonia de Silício | Experiência Premium</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3503/3503827.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="texture-overlay"></div>
+
+    <div id="capa">
+        <div class="capa-box">
+            <p class="overline">MEMÓRIAS DO AMANHÃ</p>
+            <h1 class="title">SINFONIA DE SILÍCIO</h1>
+            <p class="tagline">Uma Odisseia pela Inteligência Artificial</p>
+            <button class="btn" onclick="abrir()">Iniciar Leitura</button>
+        </div>
+    </div>
+
+    <main id="book" class="book-frame hidden">
+        <div class="progress-bar" id="bar"></div>
+        <div class="image-container">
+            <img id="cap-img" src="" alt="Cena do Capítulo">
+        </div>
+        
+        <div id="content-wrapper" class="fade-in">
+            <h1 id="cap-title" class="chapter-title"></h1>
+            <div id="cap-body" class="text-area"></div>
+        </div>
+
+        <footer>
+            <button class="btn" onclick="nav(-1)">Anterior</button>
+            <span id="pg-info"></span>
+            <button class="btn" onclick="nav(1)">Próximo</button>
+            <button class="btn" onclick="toggleDarkMode()">🌓</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
